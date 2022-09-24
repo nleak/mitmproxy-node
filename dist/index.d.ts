@@ -40,7 +40,7 @@ export declare abstract class AbstractHTTPHeaders {
     private _headers;
     readonly headers: [string, string][];
     constructor(headers: [string, string][]);
-    private _indexOfHeader(name);
+    private _indexOfHeader;
     /**
      * Get the value of the given header field.
      * If there are multiple fields with that name, this only returns the first field's value!
@@ -135,7 +135,7 @@ export default class MITMProxy {
      */
     static Create(cb?: Interceptor, interceptPaths?: string[], quiet?: boolean, onlyInterceptTextFiles?: boolean, ignoreHosts?: string | null): Promise<MITMProxy>;
     private static _cleanupCalled;
-    private static _cleanup();
+    private static _cleanup;
     private _stashEnabled;
     stashEnabled: boolean;
     private _mitmProcess;
@@ -147,8 +147,8 @@ export default class MITMProxy {
     private _stashFilter;
     stashFilter: (url: string, item: StashedItem) => boolean;
     private constructor();
-    private _initializeWSS(wss);
-    private _initializeMITMProxy(mitmProxy);
+    private _initializeWSS;
+    private _initializeMITMProxy;
     /**
      * Retrieves the given URL from the stash.
      * @param url
